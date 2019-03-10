@@ -1,5 +1,6 @@
 DROP TABLE Airport;
 DROP TABLE Airline;
+DROP TABLE Aircraft;
 
 CREATE TABLE Airport
 (
@@ -16,10 +17,16 @@ CREATE TABLE Airport
 );
 CREATE TABLE Airline
 (
-	unique_carrier_code int NOT NULL,
+	unique_carrier_code varchar(10) NOT NULL,
 	govt_id int NOT NULL,
-	other_org_id NOT NULL
+	other_org_id varchar(10) NOT NULL
+);
+CREATE TABLE Aircraft
+(
+	unique_carrier_code varchar(10) NOT NULL,
+	tail_number int NOT NULL
 );
 
 \COPY Airport(long_term_id, sequence_id, city_market_id, airport_code, airport_name, city_name, state_abr, state_fips, state_name, world_area_code) FROM '/home/deep/Documents/dbms/2_relation_model/airports.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
 \COPY Airline(unique_carrier_code,govt_id,other_org_id) FROM '/home/deep/Documents/dbms/2_relation_model/airline.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
+\COPY Aircraft(unique_carrier_code,tail_number) FROM '/home/deep/Documents/dbms/2_relation_model/aircraft.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
