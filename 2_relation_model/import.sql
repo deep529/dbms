@@ -11,16 +11,18 @@ CREATE TABLE Airport
 	airport_name varchar(120) NOT NULL,
 	city_name varchar(120) NOT NULL,
 	state_abr varchar(10) NOT NULL,
-	state_fips varchar(5) NOT NULL,
+	state_fips int NOT NULL,
 	state_name varchar(120) NOT NULL,
 	world_area_code int NOT NULL
 );
+
 CREATE TABLE Airline
 (
 	unique_carrier_code varchar(10) NOT NULL,
 	govt_id int NOT NULL,
 	other_org_id varchar(10) NOT NULL
 );
+
 CREATE TABLE Aircraft
 (
 	unique_carrier_code varchar(10) NOT NULL,

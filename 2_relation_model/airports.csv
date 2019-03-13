@@ -1,4 +1,4 @@
-ORIGIN_AIRPORT_ID,ORIGIN_AIRPORT_SEQ_ID,ORIGIN_CITY_MARKET_ID,ORIGIN,AIRPORT_NAME,ORIGIN_CITY_NAME,ORIGIN_STATE_ABR,ORIGIN_STATE_FIPS,ORIGIN_STATE_NM,ORIGIN_WAC
+DEST_AIRPORT_ID,DEST_AIRPORT_SEQ_ID,DEST_CITY_MARKET_ID,DEST,AIRPORT_NAME,DEST_CITY_NAME,DEST_STATE_ABR,DEST_STATE_FIPS,DEST_STATE_NM,DEST_WAC
 10135,1013503,30135,ABE,"Allentown/Bethlehem/Easton, PA: Lehigh Valley International","Allentown/Bethlehem/Easton, PA",PA,42,Pennsylvania,23
 10140,1014003,30140,ABQ,"Albuquerque, NM: Albuquerque International Sunport","Albuquerque, NM",NM,35,New Mexico,86
 10141,1014104,30141,ABR,"Aberdeen, SD: Aberdeen Regional","Aberdeen, SD",SD,46,South Dakota,67
@@ -322,7 +322,6 @@ ORIGIN_AIRPORT_ID,ORIGIN_AIRPORT_SEQ_ID,ORIGIN_CITY_MARKET_ID,ORIGIN,AIRPORT_NAM
 15323,1532303,35323,TRI,"Bristol/Johnson City/Kingsport, TN: Tri Cities","Bristol/Johnson City/Kingsport, TN",TN,47,Tennessee,54
 15897,1589702,35897,WYS,"West Yellowstone, MT: Yellowstone","West Yellowstone, MT",MT,30,Montana,84
 10135,1013505,30135,ABE,"Allentown/Bethlehem/Easton, PA: Lehigh Valley International","Allentown/Bethlehem/Easton, PA",PA,42,Pennsylvania,23
-10136,1013603,30136,ABI,"Abilene, TX: Abilene Regional","Abilene, TX",TX,48,Texas,74
 10140,1014005,30140,ABQ,"Albuquerque, NM: Albuquerque International Sunport","Albuquerque, NM",NM,35,New Mexico,86
 10141,1014106,30141,ABR,"Aberdeen, SD: Aberdeen Regional","Aberdeen, SD",SD,46,South Dakota,67
 10157,1015706,30157,ACV,"Arcata/Eureka, CA: California Redwood Coast Humboldt County","Arcata/Eureka, CA",CA,06,California,91
@@ -433,6 +432,7 @@ ORIGIN_AIRPORT_ID,ORIGIN_AIRPORT_SEQ_ID,ORIGIN_CITY_MARKET_ID,ORIGIN,AIRPORT_NAM
 15454,1545405,35454,UIN,"Quincy, IL: Quincy Regional-Baldwin Field","Quincy, IL",IL,17,Illinois,41
 15624,1562404,31504,VPS,"Valparaiso, FL: Eglin AFB Destin Fort Walton Beach","Valparaiso, FL",FL,12,Florida,33
 15919,1591904,31834,XNA,"Fayetteville, AR: Northwest Arkansas Regional","Fayetteville, AR",AR,05,Arkansas,71
+10136,1013603,30136,ABI,"Abilene, TX: Abilene Regional","Abilene, TX",TX,48,Texas,74
 10141,1014103,30141,ABR,"Aberdeen, SD: Aberdeen Regional","Aberdeen, SD",SD,46,South Dakota,67
 10590,1059003,30590,IFP,"Bullhead City, AZ: Laughlin/Bullhead International","Bullhead City, AZ",AZ,04,Arizona,81
 12892,1289204,32575,LAX,"Los Angeles, CA: Los Angeles International","Los Angeles, CA",CA,06,California,91
@@ -440,7 +440,6 @@ ORIGIN_AIRPORT_ID,ORIGIN_AIRPORT_SEQ_ID,ORIGIN_CITY_MARKET_ID,ORIGIN,AIRPORT_NAM
 15401,1540103,35401,TXK,"Texarkana, AR: Texarkana Regional-Webb Field","Texarkana, AR",AR,05,Arkansas,71
 10728,1072804,30728,BPT,"Beaumont/Port Arthur, TX: Jack Brooks Regional","Beaumont/Port Arthur, TX",TX,48,Texas,74
 11905,1190502,31905,GGG,"Longview, TX: East Texas Regional","Longview, TX",TX,48,Texas,74
-15235,1523501,35235,TKI,"Tokeen, AK: Tokeen Airport","Tokeen, AK",AK,02,Alaska,1
 15048,1504803,35048,SUX,"Sioux City, IA: Sioux Gateway/Col. Bud Day Field","Sioux City, IA",IA,19,Iowa,61
 10135,1013504,30135,ABE,"Allentown/Bethlehem/Easton, PA: Lehigh Valley International","Allentown/Bethlehem/Easton, PA",PA,42,Pennsylvania,23
 10140,1014004,30140,ABQ,"Albuquerque, NM: Albuquerque International Sunport","Albuquerque, NM",NM,35,New Mexico,86
@@ -484,6 +483,7 @@ ORIGIN_AIRPORT_ID,ORIGIN_AIRPORT_SEQ_ID,ORIGIN_CITY_MARKET_ID,ORIGIN,AIRPORT_NAM
 11612,1161205,31612,EVV,"Evansville, IN: Evansville Regional","Evansville, IN",IN,18,Indiana,42
 11638,1163806,31638,FAT,"Fresno, CA: Fresno Yosemite International","Fresno, CA",CA,06,California,91
 11697,1169705,32467,FLL,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International","Fort Lauderdale, FL",FL,12,Florida,33
+11719,1171902,31719,FNL,"Fort Collins/Loveland, CO: Northern Colorado Regional","Fort Collins/Loveland, CO",CO,08,Colorado,82
 11721,1172104,31721,FNT,"Flint, MI: Bishop International","Flint, MI",MI,26,Michigan,43
 11977,1197704,31977,GRB,"Green Bay, WI: Green Bay Austin Straubel International","Green Bay, WI",WI,55,Wisconsin,45
 12003,1200304,31895,GTF,"Great Falls, MT: Great Falls International","Great Falls, MT",MT,30,Montana,84
@@ -547,3 +547,4 @@ ORIGIN_AIRPORT_ID,ORIGIN_AIRPORT_SEQ_ID,ORIGIN_CITY_MARKET_ID,ORIGIN,AIRPORT_NAM
 10170,1017002,30070,ADQ,"Kodiak, AK: Kodiak Airport","Kodiak, AK",AK,02,Alaska,1
 11111,1111103,32474,COU,"Columbia, MO: Columbia Regional","Columbia, MO",MO,29,Missouri,64
 13796,1379606,32457,OAK,"Oakland, CA: Metropolitan Oakland International","Oakland, CA",CA,06,California,91
+15235,1523501,35235,TKI,"Tokeen, AK: Tokeen Airport","Tokeen, AK",AK,02,Alaska,1
