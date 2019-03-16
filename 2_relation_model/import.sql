@@ -73,11 +73,11 @@ CREATE TABLE Flight
 	FOREIGN KEY (dest_airport_long_id,dest_airport_seq_id) REFERENCES Airport (long_term_id,sequence_id)
 );
 
-\COPY Airport(long_term_id, sequence_id, city_market_id, airport_code, airport_name, city_name, state_abr, state_fips, state_name, world_area_code) FROM '/home/deep/Documents/dbms/2_relation_model/airports.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
+\COPY Airport(long_term_id, sequence_id, city_market_id, airport_code, airport_name, city_name, state_abr, state_fips, state_name, world_area_code) FROM '/home/deep/Documents/dbms/2_relation_model/csv/airports.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
 
-\COPY Airline(unique_carrier_code,govt_id,other_org_id) FROM '/home/deep/Documents/dbms/2_relation_model/airline.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
+\COPY Airline(unique_carrier_code,govt_id,other_org_id) FROM '/home/deep/Documents/dbms/2_relation_model/csv/airline.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
 
-\COPY Aircraft(unique_carrier_code,tail_number) FROM '/home/deep/Documents/dbms/2_relation_model/aircraft.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
+\COPY Aircraft(unique_carrier_code,tail_number) FROM '/home/deep/Documents/dbms/2_relation_model/csv/aircraft.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
 
 INSERT INTO Aircraft(unique_carrier_code,tail_number) VALUES('AA','Unknown');
 INSERT INTO Aircraft(unique_carrier_code,tail_number) VALUES('AS','Unknown');
@@ -92,4 +92,4 @@ INSERT INTO Aircraft(unique_carrier_code,tail_number) VALUES('UA','Unknown');
 INSERT INTO Aircraft(unique_carrier_code,tail_number) VALUES('VX','Unknown');
 INSERT INTO Aircraft(unique_carrier_code,tail_number) VALUES('WN','Unknown');
 
-\COPY Flight(year,month,day_of_month,airline_carrier_code,aircraft_tail_number,flight_number,origin_airport_long_id,origin_airport_seq_id,dest_airport_long_id,dest_airport_seq_id,crs_dept_time,dept_time,crs_arr_time,arr_time,cancel_code,distance,carrier_delay,weather_delay,nas_delay,security_delay,late_aircraft_delay,diverted_landings) FROM '/home/deep/Documents/dbms/2_relation_model/flight.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
+\COPY Flight(year,month,day_of_month,airline_carrier_code,aircraft_tail_number,flight_number,origin_airport_long_id,origin_airport_seq_id,dest_airport_long_id,dest_airport_seq_id,crs_dept_time,dept_time,crs_arr_time,arr_time,cancel_code,distance,carrier_delay,weather_delay,nas_delay,security_delay,late_aircraft_delay,diverted_landings) FROM '/home/deep/Documents/dbms/2_relation_model/csv/flight.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;

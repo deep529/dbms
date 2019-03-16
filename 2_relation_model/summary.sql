@@ -32,4 +32,4 @@ CREATE TABLE Summary
     PRIMARY KEY (flight_dept_time, flight_day_of_month, flight_month, flight_year, flight_number, flight_airline_carrier_code, flight_origin_airport_long_id)
 );
 
-\COPY Summary(flight_year, flight_month, flight_day_of_month, flight_airline_carrier_code, flight_number, flight_origin_airport_long_id, flight_crs_dept_time, flight_dept_time, dep_delay, dep_delay_new, dep_del15, taxi_out, wheels_off, wheels_on, taxi_in, crs_arr_time, arr_time, arr_delay, arr_del15, crs_elapsed_time, actual_elapsed_time, air_time, distance) FROM '/home/deep/Documents/dbms/2_relation_model/summary.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
+\COPY Summary(flight_year, flight_month, flight_day_of_month, flight_airline_carrier_code, flight_number, flight_origin_airport_long_id, flight_crs_dept_time, flight_dept_time, dep_delay, dep_delay_new, dep_del15, taxi_out, wheels_off, wheels_on, taxi_in, crs_arr_time, arr_time, arr_delay, arr_del15, crs_elapsed_time, actual_elapsed_time, air_time, distance) FROM '/home/deep/Documents/dbms/2_relation_model/csv/summary.csv' DELIMITER ',' ENCODING 'unicode' CSV HEADER;
