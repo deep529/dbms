@@ -1,0 +1,1 @@
+select make_date(year, month, day_of_month) as flight_date, airline_carrier_code, origin_airport_long_id from flight where weather_delay > 0;
