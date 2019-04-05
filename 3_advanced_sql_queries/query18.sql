@@ -1,0 +1,1 @@
+select flight_number, airline_carrier_code from flight where (origin_airport_long_id,origin_airport_seq_id) in (select distinct long_term_id,sequence_id from airport where airport_code='SFO') and diverted_landings!=0;
